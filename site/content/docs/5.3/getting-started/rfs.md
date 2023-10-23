@@ -18,7 +18,7 @@ The mixins are included in Bootstrap and are available once you include Bootstra
 
 ### Using the mixins
 
-The `rfs()` mixin has shorthands for `font-size`, `margin`, `margin-top`, `margin-right`, `margin-bottom`, `margin-left`, `padding`, `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`. See the example below for source Sass and compiled CSS.
+The `rfs()` mixin has shorthands for `font-size`, `margin`, `margin-block-start`, `margin-inline-end`, `margin-block-end`, `margin-inline-start`, `padding`, `padding-block-start`, `padding-inline-end`, `padding-block-end`, and `padding-inline-start`. See the example below for source Sass and compiled CSS.
 
 ```scss
 .title {

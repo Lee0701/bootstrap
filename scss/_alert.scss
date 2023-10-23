@@ -7,7 +7,7 @@
   --#{$prefix}alert-bg: transparent;
   --#{$prefix}alert-padding-x: #{$alert-padding-x};
   --#{$prefix}alert-padding-y: #{$alert-padding-y};
-  --#{$prefix}alert-margin-bottom: #{$alert-margin-bottom};
+  --#{$prefix}alert-margin-block-end: #{$alert-margin-block-end};
   --#{$prefix}alert-color: inherit;
   --#{$prefix}alert-border-color: transparent;
   --#{$prefix}alert-border: #{$alert-border-width} solid var(--#{$prefix}alert-border-color);
@@ -17,7 +17,7 @@
 
   position: relative;
   padding: var(--#{$prefix}alert-padding-y) var(--#{$prefix}alert-padding-x);
-  margin-bottom: var(--#{$prefix}alert-margin-bottom);
+  margin-block-end: var(--#{$prefix}alert-margin-block-end);
   color: var(--#{$prefix}alert-color);
   background-color: var(--#{$prefix}alert-bg);
   border: var(--#{$prefix}alert-border);
@@ -42,7 +42,7 @@
 // Expand the right padding and account for the close button's positioning.
 
 .alert-dismissible {
-  padding-right: $alert-dismissible-padding-r;
+  padding-inline-end: $alert-dismissible-padding-r;
 
   // Adjust close link position
   .btn-close {

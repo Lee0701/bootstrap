@@ -325,7 +325,7 @@ Flexbox can do some pretty awesome things when you mix flex alignments with auto
 
 ### With align-items
 
-Vertically move one flex item to the top or bottom of a container by mixing `align-items`, `flex-direction: column`, and `margin-top: auto` or `margin-bottom: auto`.
+Vertically move one flex item to the top or bottom of a container by mixing `align-items`, `flex-direction: column`, and `margin-block-start: auto` or `margin-block-end: auto`.
 
 {{< example class="bd-example-flex" >}}
 <div class="d-flex align-items-start flex-column mb-3" style="height: 200px;">

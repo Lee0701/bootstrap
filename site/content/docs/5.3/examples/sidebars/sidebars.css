@@ -50,8 +50,10 @@ main {
 
 .btn-toggle-nav a {
   padding: .1875rem .5rem;
-  margin-top: .125rem;
-  margin-left: 1.25rem;
+  -webkit-margin-before: .125rem;
+  margin-block-start: .125rem;
+  -webkit-margin-start: 1.25rem;
+  margin-inline-start: 1.25rem;
 }
 .btn-toggle-nav a:hover,
 .btn-toggle-nav a:focus {

@@ -82,10 +82,10 @@ In addition to customizing the Sass, you can also create your own containers wit
 // Source mixin
 @mixin make-container($padding-x: $container-padding-x) {
   width: 100%;
-  padding-right: $padding-x;
-  padding-left: $padding-x;
-  margin-right: auto;
-  margin-left: auto;
+  padding-inline-end: $padding-x;
+  padding-inline-start: $padding-x;
+  margin-inline-end: auto;
+  margin-inline-start: auto;
 }
 
 // Usage

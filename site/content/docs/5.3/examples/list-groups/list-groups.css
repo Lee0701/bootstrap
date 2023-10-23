@@ -43,7 +43,8 @@
 }
 .list-group-radio .form-check-input {
   z-index: 2;
-  margin-top: -.5em;
+  -webkit-margin-before: -.5em;
+  margin-block-start: -.5em;
 }
 .list-group-radio .list-group-item:hover,
 .list-group-radio .list-group-item:focus {

@@ -27,10 +27,10 @@ Where *property* is one of:
 
 Where *sides* is one of:
 
-- `t` - for classes that set `margin-top` or `padding-top`
-- `b` - for classes that set `margin-bottom` or `padding-bottom`
-- `s` - (start) for classes that set `margin-left` or `padding-left` in LTR, `margin-right` or `padding-right` in RTL
-- `e` - (end) for classes that set `margin-right` or `padding-right` in LTR, `margin-left` or `padding-left` in RTL
+- `t` - for classes that set `margin-block-start` or `padding-block-start`
+- `b` - for classes that set `margin-block-end` or `padding-block-end`
+- `s` - (start) for classes that set `margin-inline-start` or `padding-inline-start` in LTR, `margin-inline-end` or `padding-inline-end` in RTL
+- `e` - (end) for classes that set `margin-inline-end` or `padding-inline-end` in LTR, `margin-inline-start` or `padding-inline-start` in RTL
 - `x` - for classes that set both `*-left` and `*-right`
 - `y` - for classes that set both `*-top` and `*-bottom`
 - blank - for classes that set a `margin` or `padding` on all 4 sides of the element
@@ -53,16 +53,16 @@ Here are some representative examples of these classes:
 
 ```scss
 .mt-0 {
-  margin-top: 0 !important;
+  margin-block-start: 0 !important;
 }
 
 .ms-1 {
-  margin-left: ($spacer * .25) !important;
+  margin-inline-start: ($spacer * .25) !important;
 }
 
 .px-2 {
-  padding-left: ($spacer * .5) !important;
-  padding-right: ($spacer * .5) !important;
+  padding-inline-start: ($spacer * .5) !important;
+  padding-inline-end: ($spacer * .5) !important;
 }
 
 .p-3 {
@@ -94,7 +94,7 @@ The syntax is nearly the same as the default, positive margin utilities, but wit
 
 ```scss
 .mt-n1 {
-  margin-top: -0.25rem !important;
+  margin-block-start: -0.25rem !important;
 }
 ```
 

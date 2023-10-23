@@ -3,6 +3,7 @@
   transition: bottom .75s ease-in-out;
 }
 .modal-sheet .modal-footer {
-  padding-bottom: 2rem;
+  -webkit-padding-after: 2rem;
+  padding-block-end: 2rem;
 }
 

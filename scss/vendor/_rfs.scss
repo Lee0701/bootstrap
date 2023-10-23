@@ -311,38 +311,38 @@ $rfs-mq-property-height: if($rfs-mode == max-media-query, max-height, min-height
   @include rfs($value, padding);
 }
 
-@mixin padding-top($value) {
-  @include rfs($value, padding-top);
+@mixin padding-block-start($value) {
+  @include rfs($value, padding-block-start);
 }
 
-@mixin padding-right($value) {
-  @include rfs($value, padding-right);
+@mixin padding-inline-end($value) {
+  @include rfs($value, padding-inline-end);
 }
 
-@mixin padding-bottom($value) {
-  @include rfs($value, padding-bottom);
+@mixin padding-block-end($value) {
+  @include rfs($value, padding-block-end);
 }
 
-@mixin padding-left($value) {
-  @include rfs($value, padding-left);
+@mixin padding-inline-start($value) {
+  @include rfs($value, padding-inline-start);
 }
 
 @mixin margin($value) {
   @include rfs($value, margin);
 }
 
-@mixin margin-top($value) {
-  @include rfs($value, margin-top);
+@mixin margin-block-start($value) {
+  @include rfs($value, margin-block-start);
 }
 
-@mixin margin-right($value) {
-  @include rfs($value, margin-right);
+@mixin margin-inline-end($value) {
+  @include rfs($value, margin-inline-end);
 }
 
-@mixin margin-bottom($value) {
-  @include rfs($value, margin-bottom);
+@mixin margin-block-end($value) {
+  @include rfs($value, margin-block-end);
 }
 
-@mixin margin-left($value) {
-  @include rfs($value, margin-left);
+@mixin margin-inline-start($value) {
+  @include rfs($value, margin-inline-start);
 }

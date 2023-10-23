@@ -31,7 +31,7 @@
   display: none;
   float: left;
   width: 100%;
-  margin-right: -100%;
+  margin-inline-end: -100%;
   backface-visibility: hidden;
   @include transition($carousel-transition);
 }
@@ -162,9 +162,9 @@
   justify-content: center;
   padding: 0;
   // Use the .carousel-control's width as margin so we don't overlay those
-  margin-right: $carousel-control-width;
-  margin-bottom: 1rem;
-  margin-left: $carousel-control-width;
+  margin-inline-end: $carousel-control-width;
+  margin-block-end: 1rem;
+  margin-inline-start: $carousel-control-width;
 
   [data-bs-target] {
     box-sizing: content-box;
@@ -172,8 +172,8 @@
     width: $carousel-indicator-width;
     height: $carousel-indicator-height;
     padding: 0;
-    margin-right: $carousel-indicator-spacer;
-    margin-left: $carousel-indicator-spacer;
+    margin-inline-end: $carousel-indicator-spacer;
+    margin-inline-start: $carousel-indicator-spacer;
     text-indent: -999px;
     cursor: pointer;
     background-color: $carousel-indicator-active-bg;
@@ -201,8 +201,8 @@
   right: (100% - $carousel-caption-width) * .5;
   bottom: $carousel-caption-spacer;
   left: (100% - $carousel-caption-width) * .5;
-  padding-top: $carousel-caption-padding-y;
-  padding-bottom: $carousel-caption-padding-y;
+  padding-block-start: $carousel-caption-padding-y;
+  padding-block-end: $carousel-caption-padding-y;
   color: $carousel-caption-color;
   text-align: center;
 }

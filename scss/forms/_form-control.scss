@@ -121,7 +121,7 @@
   display: block;
   width: 100%;
   padding: $input-padding-y 0;
-  margin-bottom: 0; // match inputs if this class comes on inputs with default margins
+  margin-block-end: 0; // match inputs if this class comes on inputs with default margins
   line-height: $input-line-height;
   color: $input-plaintext-color;
   background-color: transparent;
@@ -134,8 +134,8 @@
 
   &.form-control-sm,
   &.form-control-lg {
-    padding-right: 0;
-    padding-left: 0;
+    padding-inline-end: 0;
+    padding-inline-start: 0;
   }
 }
 

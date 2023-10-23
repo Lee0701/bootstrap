@@ -9,7 +9,7 @@
   float: right;
 
   + .highlight {
-    margin-top: 0;
+    margin-block-start: 0;
   }
 
   @include media-breakpoint-up(md) {
@@ -39,6 +39,6 @@
 .btn-clipboard {
   position: relative;
   z-index: 2;
-  margin-top: 1.25rem;
-  margin-right: .75rem;
+  margin-block-start: 1.25rem;
+  margin-inline-end: .75rem;
 }

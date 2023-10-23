@@ -17,7 +17,7 @@ Since Bootstrap applies `display: block` and `width: 100%` to almost all our for
 
 ## Utilities
 
-[Margin utilities]({{< docsref "/utilities/spacing" >}}) are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and form validation messaging. We recommend sticking to `margin-bottom` utilities, and using a single direction throughout the form for consistency.
+[Margin utilities]({{< docsref "/utilities/spacing" >}}) are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and form validation messaging. We recommend sticking to `margin-block-end` utilities, and using a single direction throughout the form for consistency.
 
 Feel free to build your forms however you like, with `<fieldset>`s, `<div>`s, or nearly any other element.
 
@@ -115,7 +115,7 @@ More complex layouts can also be created with the grid system.
 
 Create horizontal forms with the grid by adding the `.row` class to form groups and using the `.col-*-*` classes to specify the width of your labels and controls. Be sure to add `.col-form-label` to your `<label>`s as well so they're vertically centered with their associated form controls.
 
-At times, you maybe need to use margin or padding utilities to create that perfect alignment you need. For example, we've removed the `padding-top` on our stacked radio inputs label to better align the text baseline.
+At times, you maybe need to use margin or padding utilities to create that perfect alignment you need. For example, we've removed the `padding-block-start` on our stacked radio inputs label to better align the text baseline.
 
 {{< example >}}
 <form>

@@ -7,8 +7,8 @@
     display: block !important;
     height: subtract(100vh, 6rem);
     // Prevent focus styles to be cut off:
-    padding-left: .25rem;
-    margin-left: -.25rem;
+    padding-inline-start: .25rem;
+    margin-inline-start: -.25rem;
     overflow-y: auto;
   }
 
@@ -45,8 +45,8 @@
 
 .bd-links-link {
   padding: .1875rem .5rem;
-  margin-top: .125rem;
-  margin-left: 1.125rem;
+  margin-block-start: .125rem;
+  margin-inline-start: 1.125rem;
   color: var(--bs-body-color);
   text-decoration: if($link-decoration == none, null, none);
 

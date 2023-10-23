@@ -36,19 +36,19 @@
 
     &:focus,
     &:not(:placeholder-shown) {
-      padding-top: $form-floating-input-padding-t;
-      padding-bottom: $form-floating-input-padding-b;
+      padding-block-start: $form-floating-input-padding-t;
+      padding-block-end: $form-floating-input-padding-b;
     }
     // Duplicated because `:-webkit-autofill` invalidates other selectors when grouped
     &:-webkit-autofill {
-      padding-top: $form-floating-input-padding-t;
-      padding-bottom: $form-floating-input-padding-b;
+      padding-block-start: $form-floating-input-padding-t;
+      padding-block-end: $form-floating-input-padding-b;
     }
   }
 
   > .form-select {
-    padding-top: $form-floating-input-padding-t;
-    padding-bottom: $form-floating-input-padding-b;
+    padding-block-start: $form-floating-input-padding-t;
+    padding-block-end: $form-floating-input-padding-b;
   }
 
   > .form-control:focus,

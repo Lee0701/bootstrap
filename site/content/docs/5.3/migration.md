@@ -483,7 +483,7 @@ Want more information? [Read the v5.1.0 blog post.](https://blog.getbootstrap.co
 
 - <span class="badge bg-danger">Breaking</span> ~~`<hr>` elements now use `height` instead of `border` to better support the `size` attribute. This also enables use of padding utilities to create thicker dividers (e.g., `<hr class="py-1">`).~~
 
-- Reset default horizontal `padding-left` on `<ul>` and `<ol>` elements from browser default `40px` to `2rem`.
+- Reset default horizontal `padding-inline-start` on `<ul>` and `<ol>` elements from browser default `40px` to `2rem`.
 
 - Added `$enable-smooth-scroll`, which applies `scroll-behavior: smooth` globally—except for users asking for reduced motion through `prefers-reduced-motion` media query. [See #31877](https://github.com/twbs/bootstrap/pull/31877)
 
@@ -631,7 +631,7 @@ Want more information? [Read the v5.1.0 blog post.](https://blog.getbootstrap.co
 
 #### Pagination
 
-- Pagination links now have customizable `margin-left` that are dynamically rounded on all corners when separated from one another.
+- Pagination links now have customizable `margin-inline-start` that are dynamically rounded on all corners when separated from one another.
 
 - Added `transition`s to pagination links.
 

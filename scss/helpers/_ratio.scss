@@ -6,7 +6,7 @@
 
   &::before {
     display: block;
-    padding-top: var(--#{$prefix}aspect-ratio);
+    padding-block-start: var(--#{$prefix}aspect-ratio);
     content: "";
   }
 

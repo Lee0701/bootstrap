@@ -357,37 +357,37 @@ $utilities: map-merge(
     ),
     "margin-x": (
       responsive: true,
-      property: margin-right margin-left,
+      property: margin-inline-end margin-inline-start,
       class: mx,
       values: map-merge($spacers, (auto: auto))
     ),
     "margin-y": (
       responsive: true,
-      property: margin-top margin-bottom,
+      property: margin-block-start margin-block-end,
       class: my,
       values: map-merge($spacers, (auto: auto))
     ),
-    "margin-top": (
+    "margin-block-start": (
       responsive: true,
-      property: margin-top,
+      property: margin-block-start,
       class: mt,
       values: map-merge($spacers, (auto: auto))
     ),
     "margin-end": (
       responsive: true,
-      property: margin-right,
+      property: margin-inline-end,
       class: me,
       values: map-merge($spacers, (auto: auto))
     ),
-    "margin-bottom": (
+    "margin-block-end": (
       responsive: true,
-      property: margin-bottom,
+      property: margin-block-end,
       class: mb,
       values: map-merge($spacers, (auto: auto))
     ),
     "margin-start": (
       responsive: true,
-      property: margin-left,
+      property: margin-inline-start,
       class: ms,
       values: map-merge($spacers, (auto: auto))
     ),
@@ -400,37 +400,37 @@ $utilities: map-merge(
     ),
     "negative-margin-x": (
       responsive: true,
-      property: margin-right margin-left,
+      property: margin-inline-end margin-inline-start,
       class: mx,
       values: $negative-spacers
     ),
     "negative-margin-y": (
       responsive: true,
-      property: margin-top margin-bottom,
+      property: margin-block-start margin-block-end,
       class: my,
       values: $negative-spacers
     ),
-    "negative-margin-top": (
+    "negative-margin-block-start": (
       responsive: true,
-      property: margin-top,
+      property: margin-block-start,
       class: mt,
       values: $negative-spacers
     ),
     "negative-margin-end": (
       responsive: true,
-      property: margin-right,
+      property: margin-inline-end,
       class: me,
       values: $negative-spacers
     ),
-    "negative-margin-bottom": (
+    "negative-margin-block-end": (
       responsive: true,
-      property: margin-bottom,
+      property: margin-block-end,
       class: mb,
       values: $negative-spacers
     ),
     "negative-margin-start": (
       responsive: true,
-      property: margin-left,
+      property: margin-inline-start,
       class: ms,
       values: $negative-spacers
     ),
@@ -443,37 +443,37 @@ $utilities: map-merge(
     ),
     "padding-x": (
       responsive: true,
-      property: padding-right padding-left,
+      property: padding-inline-end padding-inline-start,
       class: px,
       values: $spacers
     ),
     "padding-y": (
       responsive: true,
-      property: padding-top padding-bottom,
+      property: padding-block-start padding-block-end,
       class: py,
       values: $spacers
     ),
-    "padding-top": (
+    "padding-block-start": (
       responsive: true,
-      property: padding-top,
+      property: padding-block-start,
       class: pt,
       values: $spacers
     ),
     "padding-end": (
       responsive: true,
-      property: padding-right,
+      property: padding-inline-end,
       class: pe,
       values: $spacers
     ),
-    "padding-bottom": (
+    "padding-block-end": (
       responsive: true,
-      property: padding-bottom,
+      property: padding-block-end,
       class: pb,
       values: $spacers
     ),
     "padding-start": (
       responsive: true,
-      property: padding-left,
+      property: padding-inline-start,
       class: ps,
       values: $spacers
     ),
@@ -724,7 +724,7 @@ $utilities: map-merge(
       )
     ),
     "rounded-top": (
-      property: border-top-left-radius border-top-right-radius,
+      property: border-start-start-radius border-start-end-radius,
       class: rounded-top,
       values: (
         null: var(--#{$prefix}border-radius),
@@ -739,7 +739,7 @@ $utilities: map-merge(
       )
     ),
     "rounded-end": (
-      property: border-top-right-radius border-bottom-right-radius,
+      property: border-start-end-radius border-end-end-radius,
       class: rounded-end,
       values: (
         null: var(--#{$prefix}border-radius),
@@ -754,7 +754,7 @@ $utilities: map-merge(
       )
     ),
     "rounded-bottom": (
-      property: border-bottom-right-radius border-bottom-left-radius,
+      property: border-end-end-radius border-end-start-radius,
       class: rounded-bottom,
       values: (
         null: var(--#{$prefix}border-radius),
@@ -769,7 +769,7 @@ $utilities: map-merge(
       )
     ),
     "rounded-start": (
-      property: border-bottom-left-radius border-top-left-radius,
+      property: border-end-start-radius border-start-start-radius,
       class: rounded-start,
       values: (
         null: var(--#{$prefix}border-radius),

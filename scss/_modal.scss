@@ -139,7 +139,7 @@
 
 // Title text within header
 .modal-title {
-  margin-bottom: 0;
+  margin-block-end: 0;
   line-height: var(--#{$prefix}modal-title-line-height);
 }
 
@@ -183,8 +183,8 @@
   // Automatically set modal's width for larger viewports
   .modal-dialog {
     max-width: var(--#{$prefix}modal-width);
-    margin-right: auto;
-    margin-left: auto;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
   }
 
   .modal-sm {

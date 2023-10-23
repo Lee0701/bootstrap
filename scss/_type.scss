@@ -69,7 +69,7 @@
   display: inline-block;
 
   &:not(:last-child) {
-    margin-right: $list-inline-padding;
+    margin-inline-end: $list-inline-padding;
   }
 }
 
@@ -86,17 +86,17 @@
 
 // Blockquotes
 .blockquote {
-  margin-bottom: $blockquote-margin-y;
+  margin-block-end: $blockquote-margin-y;
   @include font-size($blockquote-font-size);
 
   > :last-child {
-    margin-bottom: 0;
+    margin-block-end: 0;
   }
 }
 
 .blockquote-footer {
-  margin-top: -$blockquote-margin-y;
-  margin-bottom: $blockquote-margin-y;
+  margin-block-start: -$blockquote-margin-y;
+  margin-block-end: $blockquote-margin-y;
   @include font-size($blockquote-footer-font-size);
   color: $blockquote-footer-color;
 

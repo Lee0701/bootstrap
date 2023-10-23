@@ -128,7 +128,7 @@
     left: 50%;
     display: block;
     width: var(--#{$prefix}popover-arrow-width);
-    margin-left: calc(-.5 * var(--#{$prefix}popover-arrow-width)); // stylelint-disable-line function-disallowed-list
+    margin-inline-start: calc(-.5 * var(--#{$prefix}popover-arrow-width)); // stylelint-disable-line function-disallowed-list
     content: "";
     border-bottom: var(--#{$prefix}popover-border-width) solid var(--#{$prefix}popover-header-bg);
   }
@@ -178,7 +178,7 @@
 // Offset the popover to account for the popover arrow
 .popover-header {
   padding: var(--#{$prefix}popover-header-padding-y) var(--#{$prefix}popover-header-padding-x);
-  margin-bottom: 0; // Reset the default from Reboot
+  margin-block-end: 0; // Reset the default from Reboot
   @include font-size(var(--#{$prefix}popover-header-font-size));
   color: var(--#{$prefix}popover-header-color);
   background-color: var(--#{$prefix}popover-header-bg);

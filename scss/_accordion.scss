@@ -60,7 +60,7 @@
     flex-shrink: 0;
     width: var(--#{$prefix}accordion-btn-icon-width);
     height: var(--#{$prefix}accordion-btn-icon-width);
-    margin-left: auto;
+    margin-inline-start: auto;
     content: "";
     background-image: var(--#{$prefix}accordion-btn-icon);
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@
 }
 
 .accordion-header {
-  margin-bottom: 0;
+  margin-block-end: 0;
 }
 
 .accordion-item {

@@ -9,8 +9,8 @@ describe('ScrollBar', () => {
   const getPaddingX = el => parseIntDecimal(window.getComputedStyle(el).paddingRight)
   const getMarginX = el => parseIntDecimal(window.getComputedStyle(el).marginRight)
   const getOverFlow = el => el.style.overflow
-  const getPaddingAttr = el => Manipulator.getDataAttribute(el, 'padding-right')
-  const getMarginAttr = el => Manipulator.getDataAttribute(el, 'margin-right')
+  const getPaddingAttr = el => Manipulator.getDataAttribute(el, 'padding-inline-end')
+  const getMarginAttr = el => Manipulator.getDataAttribute(el, 'margin-inline-end')
   const getOverFlowAttr = el => Manipulator.getDataAttribute(el, 'overflow')
   const windowCalculations = () => {
     return {
@@ -104,8 +104,8 @@ describe('ScrollBar', () => {
     it('should adjust the inline padding of fixed elements which are full-width', () => {
       fixtureEl.innerHTML = [
         '<div style="height: 110vh; width: 100%">',
-        '  <div class="fixed-top" id="fixed1" style="padding-right: 0px; width: 100vw"></div>',
-        '  <div class="fixed-top" id="fixed2" style="padding-right: 5px; width: 100vw"></div>',
+        '  <div class="fixed-top" id="fixed1" style="padding-inline-end: 0px; width: 100vw"></div>',
+        '  <div class="fixed-top" id="fixed2" style="padding-inline-end: 5px; width: 100vw"></div>',
         '</div>'
       ].join('')
       doc.style.overflowY = 'scroll'
@@ -152,14 +152,14 @@ describe('ScrollBar', () => {
       scrollBar.hide()
       scrollBar.reset()
 
-      expect(fixedEl.getAttribute('style').includes('padding-right')).toBeFalse()
-      expect(stickyEl.getAttribute('style').includes('margin-right')).toBeFalse()
+      expect(fixedEl.getAttribute('style').includes('padding-inline-end')).toBeFalse()
+      expect(stickyEl.getAttribute('style').includes('margin-inline-end')).toBeFalse()
     })
 
     it('should adjust the inline margin and padding of sticky elements', () => {
       fixtureEl.innerHTML = [
         '<div style="height: 110vh">',
-        '  <div class="sticky-top" style="margin-right: 10px; padding-right: 20px; width: 100vw; height: 10px"></div>',
+        '  <div class="sticky-top" style="margin-inline-end: 10px; padding-inline-end: 20px; width: 100vw; height: 10px"></div>',
         '</div>'
       ].join('')
       doc.style.overflowY = 'scroll'
@@ -185,7 +185,7 @@ describe('ScrollBar', () => {
     })
 
     it('should not adjust the inline margin and padding of sticky and fixed elements when element do not have full width', () => {
-      fixtureEl.innerHTML = '<div class="sticky-top" style="margin-right: 0px; padding-right: 0px; width: 50vw"></div>'
+      fixtureEl.innerHTML = '<div class="sticky-top" style="margin-inline-end: 0px; padding-inline-end: 0px; width: 50vw"></div>'
 
       const stickyTopEl = fixtureEl.querySelector('.sticky-top')
       const originalMargin = getMarginX(stickyTopEl)
@@ -213,8 +213,8 @@ describe('ScrollBar', () => {
       document.body.style.overflowY = 'scroll'
       const scrollBar = new ScrollBarHelper()
 
-      const hasPaddingAttr = el => el.hasAttribute('data-bs-padding-right')
-      const hasMarginAttr = el => el.hasAttribute('data-bs-margin-right')
+      const hasPaddingAttr = el => el.hasAttribute('data-bs-padding-inline-end')
+      const hasMarginAttr = el => el.hasAttribute('data-bs-margin-inline-end')
       const stickyEl = fixtureEl.querySelector('#sticky')
       const originalPadding = getPaddingX(stickyEl)
       const originalMargin = getMarginX(stickyEl)
@@ -253,7 +253,7 @@ describe('ScrollBar', () => {
         fixtureEl.innerHTML = [
           '<style>',
           '  body {',
-          `    padding-right: ${styleSheetPadding}`,
+          `    padding-inline-end: ${styleSheetPadding}`,
           '  }',
           '</style>'
         ].join('')
@@ -293,7 +293,7 @@ describe('ScrollBar', () => {
         fixtureEl.innerHTML = [
           '<style>',
           '  body {',
-          `    padding-right: ${styleSheetPadding}`,
+          `    padding-inline-end: ${styleSheetPadding}`,
           '  }',
           '</style>'
         ].join('')

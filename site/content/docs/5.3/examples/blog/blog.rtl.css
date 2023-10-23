@@ -24,16 +24,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Pagination */
 .blog-pagination {
-  margin-bottom: 4rem;
+  -webkit-margin-after: 4rem;
+  margin-block-end: 4rem;
 }
 
 /*
  * Blog posts
  */
 .blog-post {
-  margin-bottom: 4rem;
+  -webkit-margin-after: 4rem;
+  margin-block-end: 4rem;
 }
 .blog-post-meta {
-  margin-bottom: 1.25rem;
+  -webkit-margin-after: 1.25rem;
+  margin-block-end: 1.25rem;
   color: #727272;
 }

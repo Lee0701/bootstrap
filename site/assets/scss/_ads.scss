@@ -28,11 +28,11 @@
 
 .carbon-img {
   float: left;
-  margin-left: -145px;
+  margin-inline-start: -145px;
 }
 
 .carbon-poweredby {
   display: block;
-  margin-top: .75rem;
+  margin-block-start: .75rem;
   color: var(--bs-body-color) !important;
 }

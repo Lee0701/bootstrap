@@ -75,7 +75,7 @@ Our approach to building RTL support into Bootstrap comes with two important dec
 
 2. **Second, we've renamed a handful of directional classes to adopt a logical properties approach.** Most of you have already interacted with logical properties thanks to our flex utilities—they replace direction properties like `left` and `right` in favor `start` and `end`. That makes the class names and values appropriate for LTR and RTL without any overhead.
 
-  For example, instead of `.ml-3` for `margin-left`, use `.ms-3`.
+  For example, instead of `.ml-3` for `margin-inline-start`, use `.ms-3`.
 
 Working with RTL, through our source Sass or compiled CSS, shouldn't be much different from our default LTR though.
 

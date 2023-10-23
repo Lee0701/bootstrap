@@ -1,7 +1,9 @@
 body {
-  padding-bottom: 20px;
+  -webkit-padding-after: 20px;
+  padding-block-end: 20px;
 }
 
 .navbar {
-  margin-bottom: 20px;
+  -webkit-margin-after: 20px;
+  margin-block-end: 20px;
 }

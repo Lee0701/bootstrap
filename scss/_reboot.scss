@@ -81,8 +81,8 @@ hr {
 //    margin for easier control within type scales as it avoids margin collapsing.
 
 %heading {
-  margin-top: 0; // 1
-  margin-bottom: $headings-margin-bottom;
+  margin-block-start: 0; // 1
+  margin-block-end: $headings-margin-block-end;
   font-family: $headings-font-family;
   font-style: $headings-font-style;
   font-weight: $headings-font-weight;
@@ -127,8 +127,8 @@ h6 {
 // bottom margin to use `rem` units instead of `em`.
 
 p {
-  margin-top: 0;
-  margin-bottom: $paragraph-margin-bottom;
+  margin-block-start: 0;
+  margin-block-end: $paragraph-margin-block-end;
 }
 
 
@@ -148,7 +148,7 @@ abbr[title] {
 // Address
 
 address {
-  margin-bottom: 1rem;
+  margin-block-end: 1rem;
   font-style: normal;
   line-height: inherit;
 }
@@ -158,21 +158,21 @@ address {
 
 ol,
 ul {
-  padding-left: 2rem;
+  padding-inline-start: 2rem;
 }
 
 ol,
 ul,
 dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-block-start: 0;
+  margin-block-end: 1rem;
 }
 
 ol ol,
 ul ul,
 ol ul,
 ul ol {
-  margin-bottom: 0;
+  margin-block-end: 0;
 }
 
 dt {
@@ -182,8 +182,8 @@ dt {
 // 1. Undo browser default
 
 dd {
-  margin-bottom: .5rem;
-  margin-left: 0; // 1
+  margin-block-end: .5rem;
+  margin-inline-start: 0; // 1
 }
 
 
@@ -281,8 +281,8 @@ samp {
 
 pre {
   display: block;
-  margin-top: 0; // 1
-  margin-bottom: 1rem; // 2
+  margin-block-start: 0; // 1
+  margin-block-end: 1rem; // 2
   overflow: auto; // 3
   @include font-size($code-font-size);
   color: $pre-color;
@@ -348,8 +348,8 @@ table {
 }
 
 caption {
-  padding-top: $table-cell-padding-y;
-  padding-bottom: $table-cell-padding-y;
+  padding-block-start: $table-cell-padding-y;
+  padding-block-end: $table-cell-padding-y;
   color: $table-caption-color;
   text-align: left;
 }
@@ -498,7 +498,7 @@ legend {
   float: left; // 1
   width: 100%;
   padding: 0;
-  margin-bottom: $legend-margin-bottom;
+  margin-block-end: $legend-margin-block-end;
   @include font-size($legend-font-size);
   font-weight: $legend-font-weight;
   line-height: inherit;

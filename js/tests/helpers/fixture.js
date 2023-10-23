@@ -38,7 +38,7 @@ export const jQueryMock = {
 }
 
 export const clearBodyAndDocument = () => {
-  const attributes = ['data-bs-padding-right', 'style']
+  const attributes = ['data-bs-padding-inline-end', 'style']
 
   for (const attribute of attributes) {
     document.documentElement.removeAttribute(attribute)

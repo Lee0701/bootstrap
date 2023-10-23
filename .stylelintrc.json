@@ -19,10 +19,10 @@
         ],
         "property-disallowed-list": [
           "border-radius",
-          "border-top-left-radius",
-          "border-top-right-radius",
-          "border-bottom-right-radius",
-          "border-bottom-left-radius",
+          "border-start-start-radius",
+          "border-start-end-radius",
+          "border-end-end-radius",
+          "border-end-start-radius",
           "transition"
         ],
         "scss/dollar-variable-default": [

@@ -128,14 +128,14 @@
 
   .btn-close {
     padding: calc(var(--#{$prefix}offcanvas-padding-y) * .5) calc(var(--#{$prefix}offcanvas-padding-x) * .5);
-    margin-top: calc(-.5 * var(--#{$prefix}offcanvas-padding-y));
-    margin-right: calc(-.5 * var(--#{$prefix}offcanvas-padding-x));
-    margin-bottom: calc(-.5 * var(--#{$prefix}offcanvas-padding-y));
+    margin-block-start: calc(-.5 * var(--#{$prefix}offcanvas-padding-y));
+    margin-inline-end: calc(-.5 * var(--#{$prefix}offcanvas-padding-x));
+    margin-block-end: calc(-.5 * var(--#{$prefix}offcanvas-padding-y));
   }
 }
 
 .offcanvas-title {
-  margin-bottom: 0;
+  margin-block-end: 0;
   line-height: var(--#{$prefix}offcanvas-title-line-height);
 }
 
